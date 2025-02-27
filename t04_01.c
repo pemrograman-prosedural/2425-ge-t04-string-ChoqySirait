@@ -22,7 +22,6 @@ int main() {
         int Nilai_ASCII = atoi(Penampung_Sementara);  
         printf("%c", Nilai_ASCII);  
     }
-
     printf("\n");  
     return 0;
 }

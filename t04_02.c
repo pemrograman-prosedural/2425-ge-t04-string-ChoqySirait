@@ -9,9 +9,9 @@ int main(int _argv, char **_argc) {
       char input[21]; 
       scanf("%20[^\n]", input);
   
-      int length = strlen(input);
+      int PanjangString = strlen(input);
   
-      for (int i = 0; i < length; i++) {
+      for (int i = 0; i < PanjangString; i++) {
           printf("%03d", input[i]); 
       }
   

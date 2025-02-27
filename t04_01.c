@@ -5,9 +5,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main() {
+int main(int _argc, char **_argv) {
     char input[61];   
-    scanf("%60s", input);
+    fgets(input, sizeof(input), stdin);
+    input[strcspn(input, "\n")] = 0; 
 
     int panjangstring = strlen(input);
 
@@ -19,10 +20,11 @@ int main() {
     for (int i = 0; i < panjangstring; i += 3) {
         char Penampung_Sementara[4] = {0};  
         strncpy(Penampung_Sementara, &input[i], 3);  
-        int Nilai_ASCII = atoi(Penampung_Sementara);  
+        
+        int Nilai_ASCII;
+        sscanf(Penampung_Sementara, "%3d", &Nilai_ASCII);  
         printf("%c", Nilai_ASCII);  
     }
 
-    printf("\n");  
-    return 0;
+    return 0;  
 }

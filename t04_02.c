@@ -6,7 +6,7 @@
 
 int main(int _argv, char **_argc) {
   
-      char input[20]; 
+      char input[21]; 
       scanf("%20[^\n]", input); 
   
       int PanjangString = strlen(input);

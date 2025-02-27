@@ -6,7 +6,7 @@
 #include <string.h>
 
 int main(int _argv, char **_argc) {
-      char input[60];
+      char input[61];
       scanf("%60s", input);
   
       int panjangstring = strlen(input);
